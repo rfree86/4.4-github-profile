@@ -1,0 +1,45 @@
+@import '../bower_components/bourbon/app/assets/stylesheets/bourbon';
+$visual-grid: true !global;
+$max-width: em(1088) !global;
+$min-width: em(1087) !global;
+@import '../bower_components/neat/app/assets/stylesheets/neat';
+
+ul{
+  list-style: none;
+}
+li{
+  list-style: none;
+}
+a{
+  text-decoration: none;
+  color: rgba(51, 51, 51, 1);
+}
+.header_container{
+  width: 100%;
+  min-width: em(1087);
+  background-color: rgba(245, 245, 245, 1);
+}
+.header{
+  @include outer-container;
+
+}
+.header_left{
+  @include span-columns(8);
+  border: 1px solid black;
+}
+.h_l_list li{
+  display: inline-block;
+  vertical-align: middle;
+  color: rgba(51, 51, 51, 1);
+}
+.header_right{
+  @include span-columns(3);
+@include shift(1);
+  border: 1px solid black;
+}
+.h_r_list li{
+display: inline-block;
+vertical-align: middle;
+@include omega(3n);
+
+}
