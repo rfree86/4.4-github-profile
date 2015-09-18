@@ -63,7 +63,33 @@ form,
 }
 .page_container{
   @include outer-container;
+  min-width: em(1087);
 }
+//////////////////////MAIN CONTENT//////////////////
+.main_content{
+  @include span-columns(9);
+}
+.repo_tabs{
+  @include span-columns(9 of 9);
+}
+.repo_tabs_left{
+  @include span-columns(5 of 9);
+}
+.repo_tab{
+  @include span-columns(1.5 of 5);
+  display: inline-block;
+}
+.repo_tabs_right{
+  @include span-columns(4 of 9);
+  display: inline-block;
+
+}
+.edit_button{
+  @include shift(6.75);
+
+}
+
+////////////SIDEBAR CONTENT////////////////
 .sidebar{
   @include span-columns(3);
   background-color: green;
@@ -74,4 +100,65 @@ form,
 .follow_list{
   @include span-columns(1 of 3);
   text-align: center;
+}
+.followers_number,
+.Starred_number,
+.following_number{
+  font-size: 28px;
+  font-weight: bold;
+  color: rgba(64, 120, 192, 1);
+}
+.main_content_nav{
+  @include span-columns(9 of 9);
+
+}
+.main_content_nav_left{
+  @include span-columns(4 of 9);
+
+}
+.main_content_nav_left ul{
+  @include span-columns(4 of 4);
+}
+.m_c_n_l_list:first-child{
+  @include span-columns(3 of 4);
+}
+.m_c_n_l_list:last-child{
+  @include span-columns(1 of 4);
+}
+.m_c_n_l_input{
+  width: 75%;
+}
+.main_content_nav_right{
+  @include span-columns(5 of 9);
+}
+.m_c_n_r_link{
+  @include span-columns(.7 of 5);
+}
+///////FOOTER///////////
+.footer{
+@include outer-container;
+min-width: em(1087);
+}
+.footer_left{
+  @include span-columns(5);
+  display: inline-block;
+}
+.footer_left ul{
+  @include span-columns (5 of 5);
+  width: 100%;
+}
+.footer_left li{
+  @include span-columns(.8 of 5);
+  @include omega(6n);
+  font-size: 10px;
+}
+.footer_right{
+  @include span-columns(5);
+}
+.footer_right ul{
+  @include span-columns(5 of 5);
+}
+.footer_right li{
+  @include span-columns(.71 of 5);
+  font-size: 10px;
 }
