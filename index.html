@@ -1,56 +1,69 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
   <meta charset="UTF-8">
-<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css">
   <link rel="stylesheet" href="stylesheet/main.css">
 
   <title>
   </title>
 </head>
-<body>
-<div class="header_container">
-  <div class="header">
-  <div class="header_left">
-    <ul class="h_l_list">
-      <li class="header_logo"><i class="fa fa-github-square fa-2x"></i></li>
-      <li class="header_searchbar">
-        <form action="">
-          <input class="h_l_input" type="text" placeholder="Search Github">
-        </form>
-      </li>
-      <li class="header_command"><a href="https://github.co/pulls">Pull Request</a></li>
-      <li class="header_command"><a href="https://github.com/issues">Issues</a></li>
-      <li class="header_command"><a href="https://gist/github.com">Gist</a></li>
-    </ul>
-  </div>
-    <div class="header_right">
-    <ul class="h_r_list">
-      <li class="h_r_icon"><button><i class="fa fa-bell fa-lg"></i></button></li>
-      <li class="h_r_icon"><button><i class="fa fa-plus fa-lg"></i><i class="fa fa-caret-down"></i></button></li>
-      <li class="h_r_icon user_avatar"><button><img src="http:placecage.com/c/20/20" alt=""><i class="fa fa-caret-down"></i></button></li>
-    </ul>
-  </div>
- </div>
-</div>
-<div class="page_container">
-  <div class="sidebar">
 
-      <img class="user_avatar" src="http:placecage.com/c/230/230" alt="avatar">
+<body>
+  <div class="header_container">
+    <div class="header">
+      <div class="header_left">
+        <ul class="h_l_list">
+          <li class="header_logo"><i class="fa fa-github-square fa-2x"></i></li>
+          <li class="header_searchbar">
+            <form action="">
+              <input class="h_l_input" type="text" placeholder="Search Github">
+            </form>
+          </li>
+          <li class="header_command"><a href="https://github.co/pulls">Pull Request</a></li>
+          <li class="header_command"><a href="https://github.com/issues">Issues</a></li>
+          <li class="header_command"><a href="https://gist/github.com">Gist</a></li>
+        </ul>
+      </div>
+      <div class="header_right">
+        <ul class="h_r_list">
+          <li class="h_r_icon">
+            <button><i class="fa fa-bell fa-lg"></i></button>
+          </li>
+          <li class="h_r_icon">
+            <button><i class="fa fa-plus fa-lg"></i><i class="fa fa-caret-down"></i></button>
+          </li>
+          <li class="h_r_icon js_user_avatar">
+            <button>
+              <img src="" alt=""><i class="fa fa-caret-down"></i>
+            </button>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </div>
+  <div class="page_container">
+    <div class="sidebar">
+      <ul>
+        <li class="user_avatar js_user_avatar">
+          <img src="" alt="avatar">
+        </li>
+      </ul>
       <h1 class="name">User Name</h1>
       <h3 class="user_name">user name</h3>
-    <hr>
+      <hr>
       <ul class="email_signupDate">
         <li class="e_s-list">
           <i class="fa fa-envelope-o"></i>
           <span class="email_info">email</span>
         </li>
         <li class="e_s_list">
-          <i class="fa fa-clock-o"></i>
-          Joined on <span class="join_date">date</span>
+          <i class="fa fa-clock-o"></i> Joined on
+          <span class="join_date">date</span>
         </li>
       </ul>
-    <hr>
+      <hr>
       <ul class="follow">
         <li class="follow_list">
           <span class="followers_number">0</span>
@@ -66,89 +79,104 @@
           <span>Following</span>
         </li>
       </ul>
-    <hr>
-    <ul class="organizations">
-      <li><h2>Organizations</h2></li>
-      <li class="organizations_icon"><img src="http:placecage.com/c/42/42" alt=""></li>
-    </ul>
-  </div>
-  <div class="main_content">
-    <div class="repo_tabs">
-
-     <div class="repo_tabs_left">
-        <ul class="r_t_l_list">
-          <li class="repo_tab"><button><i class="fa fa-plus-square-o"></i> Contributions</button></li>
-          <li class="repo_tab"><button><i class="fa fa-book"></i> Reopsitories</button></li>
-          <li class="repo_tab"><button><i class="fa fa-rss"></i> Public activity</button></li>
-        </ul>
-     </div>
-
-    <div class="repo_tabs_right">
-      <ul class="r_t-r-list">
-        <li class="edit_button"><button><i class="fa fa-pencil"></i> Edit Profile</button></li>
+      <hr>
+      <ul class="organizations">
+        <li>
+          <h2>Organizations</h2>
+        </li>
+        <li>
+          <img class="organizations_icon" src="https://avatars0.githubusercontent.com/u/13643949?v=3&s=84" alt="">
+        </li>
       </ul>
     </div>
+    <div class="main_content">
+      <div class="repo_tabs">
+
+        <div class="repo_tabs_left">
+          <ul class="r_t_l_list">
+            <li class="repo_tab">
+              <button><i class="fa fa-plus-square-o"></i> Contributions</button>
+            </li>
+            <li class="repo_tab">
+              <button><i class="fa fa-book"></i> Reopsitories</button>
+            </li>
+            <li class="repo_tab">
+              <button><i class="fa fa-rss"></i> Public activity</button>
+            </li>
+          </ul>
+        </div>
+
+        <div class="repo_tabs_right">
+          <ul class="r_t-r-list">
+            <li class="edit_button">
+              <button><i class="fa fa-pencil"></i> Edit Profile</button>
+            </li>
+          </ul>
+        </div>
+
+      </div>
+      <div class="main_content_nav">
+        <div class="main_content_nav_left">
+          <ul>
+            <li class="m_c_n_l_list">
+              <form action="">
+                <input class="m_c_n_l_input" type="text" placeholder="Find a Repository">
+              </form>
+            </li>
+            <li class="m_c_n_l_list">
+              <button>Search</button>
+            </li>
+          </ul>
+        </div>
+        <div class="main_content_nav_right">
+          <ul>
+            <li class="m_c_n_r_link"><a href="">All</a></li>
+            <li class="m_c_n_r_link"><a href="">Public</a></li>
+            <li class="m_c_n_r_link"><a href="">Private</a></li>
+            <li class="m_c_n_r_link"><a href="">Source</a></li>
+            <li class="m_c_n_r_link"><a href="">Forks</a></li>
+            <li class="m_c_n_r_link"><a href="">Mirrors</a></li>
+            <li class="m_c_n_r_link mcnr_button">
+              <button><i class="fa fa-book"></i>New</button>
+            </li>
+          </ul>
+        </div>
+      </div>
+      <div class="reposit">
+        <ul class="repo_list">
+
+        </ul>
+
+
+      </div>
 
     </div>
-    <div class="main_content_nav">
-      <div class="main_content_nav_left">
-        <ul>
-          <li class="m_c_n_l_list">
-            <form action="">
-            <input class="m_c_n_l_input" type="text" placeholder="Find a Repository">
-            </form>
-          </li>
-          <li class="m_c_n_l_list">
-            <button>Search</button>
-          </li>
-        </ul>
-      </div>
-      <div class="main_content_nav_right">
-        <ul>
-          <li class="m_c_n_r_link"><a href="">All</a></li>
-          <li class="m_c_n_r_link"><a href="">Public</a></li>
-          <li class="m_c_n_r_link"><a href="">Private</a></li>
-          <li class="m_c_n_r_link"><a href="">Source</a></li>
-          <li class="m_c_n_r_link"><a href="">Forks</a></li>
-          <li class="m_c_n_r_link"><a href="">Mirrors</a></li>
-          <li class="m_c_n_r_link mcnr_button"><button><i class="fa fa-book"></i>New</button></li>
-        </ul>
-      </div>
-    </div>
-    <div class="reposit">
-      <ul class="repo_list">
-
+  </div>
+  <div class="footer">
+    <div class="footer_left">
+      <ul>
+        <li>@ 2015 GitHub, Inc.</li>
+        <li><a href="https://www.github.com">Terms</a></li>
+        <li><a href="https://www.github.com">Privacy</a></li>
+        <li><a href="https://www.github.com">Security</a></li>
+        <li><a href="https://www.github.com">Contact</a></li>
+        <li><a href="https://www.github.com">Help</a></li>
       </ul>
-
-
     </div>
-
+    <div class="footer_right">
+      <ul>
+        <li><a href="https://www.github.com">Status</a></li>
+        <li><a href="https://www.github.com">API</a></li>
+        <li><a href="https://www.github.com">Training</a></li>
+        <li><a href="https://www.github.com">Shop</a></li>
+        <li><a href="https://www.github.com">Blog</a></li>
+        <li><a href="https://www.github.com">About</a></li>
+        <li><a href="https://www.github.com">Pricing</a></li>
+      </ul>
+    </div>
   </div>
-</div>
-<div class="footer">
-  <div class="footer_left">
-    <ul>
-      <li>@ 2015 GitHub, Inc.</li>
-      <li><a href="https://www.github.com">Terms</a></li>
-      <li><a href="https://www.github.com">Privacy</a></li>
-      <li><a href="https://www.github.com">Security</a></li>
-      <li><a href="https://www.github.com">Contact</a></li>
-      <li><a href="https://www.github.com">Help</a></li>
-    </ul>
-  </div>
-  <div class="footer_right">
-    <ul>
-      <li><a href="https://www.github.com">Status</a></li>
-      <li><a href="https://www.github.com">API</a></li>
-      <li><a href="https://www.github.com">Training</a></li>
-      <li><a href="https://www.github.com">Shop</a></li>
-      <li><a href="https://www.github.com">Blog</a></li>
-      <li><a href="https://www.github.com">About</a></li>
-      <li><a href="https://www.github.com">Pricing</a></li>
-    </ul>
-  </div>
-</div>
-<script src="bower_components/jquery/dist/jquery.js"></script>
-<script src="main.js"></script>
+  <script src="bower_components/jquery/dist/jquery.js"></script>
+  <script src="main.js"></script>
 </body>
+
 </html>
