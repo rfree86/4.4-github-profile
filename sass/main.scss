@@ -1,13 +1,22 @@
 @import '../bower_components/bourbon/app/assets/stylesheets/bourbon';
-$visual-grid: true !global;
+//$visual-grid: true !global;
 $max-width: em(1088) !global;
 $min-width: em(1087) !global;
 @import '../bower_components/neat/app/assets/stylesheets/neat';
+$link-color: rgba(64, 120, 192, 1);
+$border-color: rgba(221, 221, 221, 1);
 
+body{
+margin: 0;
+font-family: sans-serif;
 
-
+}
 button{
   padding: 0;
+}
+button:focus{
+  outline: 0;
+
 }
 ul{
   list-style: none;
@@ -35,7 +44,7 @@ a{
 }
 .header_left{
   @include span-columns(8);
-  border: 1px solid black;
+
 }
 .h_l_list li{
   display: inline-block;
@@ -43,11 +52,21 @@ a{
   color: rgba(51, 51, 51, 1);
     margin-right: 10px
 }
+.header_command{
+  font-size: 13px;
+font-weight: bold;
+
+padding: 4px 8px;
+line-height: 20px;
+}
+.header_command:hover{
+  color: $link-color;
+}
 
 .header_right{
   @include span-columns(2);
 @include shift(2);
-  border: 1px solid black;
+
 }
 .h_r_list li{
   @include span-columns(1 of 3);
@@ -55,9 +74,15 @@ display: inline-block;
 vertical-align: bottom;
 @include omega(3n);
 }
+.h_r_icon{
+    height: 20px;
+    width:20px;
+    text-align: right;
+}
 form,
 .h_l_input{
   width: 350px;
+  height: 28px;
 }
 .page_container{
   @include outer-container;
@@ -69,35 +94,82 @@ form,
 }
 .repo_tabs{
   @include span-columns(9 of 9);
+    border-bottom: 2px solid $border-color;
+    margin-bottom: 15px;
 }
 .repo_tabs_left{
-  @include span-columns(5 of 9);
+  @include span-columns(6 of 9);
 }
+
 .repo_tab{
-  @include span-columns(1.5 of 5);
+  @include span-columns(2 of 6);
   display: inline-block;
+  margin: 0;
+}
+.repo_tab button{
+  font-size: 13px;
+  padding: 8px 12px;
+  line-height: 20px;
+  color: rgba(102, 111, 158, 1);
+  border:0;
+  background-color: white;
+}
+.repo_tab_2 button{
+  color: rgba(51, 51, 51, 1);
+  border-top: 2px solid $border-color;
+  border-left: 2px solid $border-color;
+  border-right: 2px solid $border-color;
 }
 .repo_tabs_right{
-  @include span-columns(4 of 9);
+  @include span-columns(2 of 9);
+    @include shift(1);
   display: inline-block;
-
+  margin-top: 7px;
 }
 .edit_button{
-  @include shift(6.75);
+  text-align: right;
 
 }
+.edit_button button{
+  line-height: 20px;
+  vertical-align: middle;
+  padding: 2px 10px;
+  font-weight: bold;
+  background-color: rgba(242, 242, 242, 1);
+  border: 1px solid $border-color;
+}
+
 
 ////////////SIDEBAR CONTENT////////////////
 .sidebar{
   @include span-columns(3);
-  background-color: green;
+
+}
+.name{
+  font-size: 26px;
+  margin-top: 0px;
+  margin-bottom: 0px;
+}
+.user_name{
+  font-size: 20px;
+  margin-top: 5px;
+  margin-bottom: 15px;
 }
 .e_s_list,{
   display: inline-block;
+  font-size: 13px;
+}
+.js_email_info{
+  color: $link-color;
+  font-size: 13px;
+}
+.js_join_date{
+  font-size: 13px;
 }
 .follow_list{
   @include span-columns(1 of 3);
   text-align: center;
+  font-size: 13px;
 }
 .followers_number,
 .Starred_number,
@@ -106,8 +178,14 @@ form,
   font-weight: bold;
   color: rgba(64, 120, 192, 1);
 }
+.organizations{
+  font-size: 12px;
+}
 .main_content_nav{
   @include span-columns(9 of 9);
+  border-bottom: 2px solid $border-color;
+  padding-bottom: 15px;
+  margin-bottom: 15px;
 
 }
 .main_content_nav_left{
@@ -123,47 +201,89 @@ form,
 .m_c_n_l_list:last-child{
   @include span-columns(1 of 4);
 }
+.m_c_n_l_list button{
+  padding: 6px 12px;
+  font-size: 13px;
+  font-weight: bold;
+  line-height: 22px;
+}
 .m_c_n_l_input{
   width: 75%;
+  height: 34px;
+  font-size: 13px;
 }
 .main_content_nav_right{
   @include span-columns(5 of 9);
+  margin-top: 8px;
 }
-.m_c_n_r_link{
+
+.m_c_n_r_links{
   @include span-columns(.7 of 5);
+  margin-right: 20px;
+}
+.mccrl1{
+  text-align: right;
+}
+.mcnr_button{
+  position: relative;
+  bottom: 8px;
+  left: 35px;
+  border-radius: 10%;
+padding: 6px 12px;
+font-size: 13px;
+line-height: 20px;
+background-color: rgba(100, 180, 72, 1);
+border: 1px solid rgba(92, 169, 65, 1);
+color: white;
+font-weight: bold;
 }
 ///////FOOTER///////////
-.footer{
+.footer_container{
 @include outer-container;
 min-width: em(1087);
 }
+.footer{
+  border-top: 1px solid $border-color;
+  @include span-columns(12);
+  padding-top: 40px;
+  padding-bottom: 40px;
+
+}
 .footer_left{
-  @include span-columns(5);
+  @include span-columns(6 of 12);
   display: inline-block;
+    position: relative;
 }
 .footer_left ul{
-  @include span-columns (5 of 5);
+  @include span-columns (6 of 6);
   width: 100%;
 }
 .footer_left li{
-  @include span-columns(.8 of 5);
-  @include omega(6n);
-  font-size: 10px;
+  @include span-columns(1 of 6);
+
+  font-size: 12px;
+  margin-right: 10px;
+  //text-align: right;
 }
+.footer_logo{
+  position: absolute;
+  color: rgba(204, 204, 204, 1);
+  top: -10px;
+  right: -29px;
+}
+
 .footer_right{
-  @include span-columns(5);
+  @include span-columns(5 of 12);
+  @include shift(1);
 }
 .footer_right ul{
   @include span-columns(5 of 5);
 }
 .footer_right li{
   @include span-columns(.71 of 5);
-  font-size: 10px;
+  font-size: 12px;
 }
-.h_r_icon{
-  height: 20px;
-  width:20px;
-}
+
 .organizations_icon {
   height: 42px;
   width: 42px;
@@ -174,4 +294,32 @@ min-width: em(1087);
 .user_pic1{
   width:20px;
   height:20px;
+}
+.js_fork{
+  position: relative;
+  left: 785px;
+  bottom: 80px;
+}
+.js_star{
+    position: relative;
+    left: 750px;
+    bottom: 98px
+}
+.js_repoName,
+.m_c_n_r_link,
+.footer_link{
+  color: rgba(64, 120, 192, 1);
+}
+.js_repoName:hover{
+  text-decoration: underline;
+}
+.footer_link:hover{
+  text-decoration: underline;
+}
+.js_update{
+  border-bottom: 1px solid $border-color;
+  padding-bottom: 20px;
+}
+.m_c_n_r_link:hover{
+  text-decoration: underline;
 }

@@ -15,28 +15,28 @@
     <div class="header">
       <div class="header_left">
         <ul class="h_l_list">
-          <li class="header_logo"><i class="fa fa-github-square fa-2x"></i></li>
+          <li class="header_logo"><i class="fa fa-github fa-2x"></i></li>
           <li class="header_searchbar">
             <form action="">
               <input class="h_l_input" type="text" placeholder="Search Github">
             </form>
           </li>
-          <li class="header_command"><a href="https://github.co/pulls">Pull Request</a></li>
-          <li class="header_command"><a href="https://github.com/issues">Issues</a></li>
-          <li class="header_command"><a href="https://gist/github.com">Gist</a></li>
+          <li><a class="header_command" href="https://github.co/pulls">Pull Request</a></li>
+          <li><a class="header_command" href="https://github.com/issues">Issues</a></li>
+          <li><a class="header_command" href="https://gist/github.com">Gist</a></li>
         </ul>
       </div>
       <div class="header_right">
         <ul class="h_r_list">
           <li class="h_r_icon">
-            <button><i class="fa fa-bell fa-lg"></i></button>
+            <i class="fa fa-bell"></i>
           </li>
           <li class="h_r_icon">
-            <button><i class="fa fa-plus fa-lg"></i><i class="fa fa-caret-down"></i></button>
+            <i class="fa fa-plus"></i><i class="fa fa-caret-down"></i>
           </li>
           <li class="h_r_icon js_user_avatar">
             <button>
-              <img src="" alt=""><i class="fa fa-caret-down"></i>
+              <img src="" alt="">
             </button>
           </li>
         </ul>
@@ -85,7 +85,7 @@
           <h2>Organizations</h2>
         </li>
         <li>
-          <img class="organizations_icon" src="https://avatars0.githubusercontent.com/u/13643949?v=3&s=84" alt="">
+          <a href="https://github.com/TIY-GVL-FEE-2015-August"><img height="42" src="https://avatars0.githubusercontent.com/u/13643949?v=3&s=84" alt="" width="42"></a>
         </li>
       </ul>
     </div>
@@ -97,8 +97,8 @@
             <li class="repo_tab">
               <button><i class="fa fa-plus-square-o"></i> Contributions</button>
             </li>
-            <li class="repo_tab">
-              <button><i class="fa fa-book"></i> Reopsitories</button>
+            <li class="repo_tab repo_tab_2">
+              <button><i class="fa fa-book"></i> Repositories</button>
             </li>
             <li class="repo_tab">
               <button><i class="fa fa-rss"></i> Public activity</button>
@@ -130,16 +130,16 @@
         </div>
         <div class="main_content_nav_right">
           <ul>
-            <li class="m_c_n_r_link"><a href="">All</a></li>
-            <li class="m_c_n_r_link"><a href="">Public</a></li>
-            <li class="m_c_n_r_link"><a href="">Private</a></li>
-            <li class="m_c_n_r_link"><a href="">Source</a></li>
-            <li class="m_c_n_r_link"><a href="">Forks</a></li>
-            <li class="m_c_n_r_link"><a href="">Mirrors</a></li>
-            <li class="m_c_n_r_link mcnr_button">
-              <button><i class="fa fa-book"></i>New</button>
-            </li>
+            <li class="m_c_n_r_links mccrl1"><a class="m_c_n_r_link" href="">All</a></li>
+            <li class="m_c_n_r_links"><a class="m_c_n_r_link" href="">Public</a></li>
+            <li class="m_c_n_r_links"><a class="m_c_n_r_link" href="">Private</a></li>
+            <li class="m_c_n_r_links"><a class="m_c_n_r_link" href="">Source</a></li>
+            <li class="m_c_n_r_links"><a class="m_c_n_r_link" href="">Forks</a></li>
+            <li class="m_c_n_r_links"><a class="m_c_n_r_link" href="">Mirrors</a></li>
           </ul>
+
+            <button class="mcnr_button"><i class="fa fa-book"></i>New</button>
+
         </div>
       </div>
       <div class="reposit">
@@ -152,30 +152,35 @@
 
     </div>
   </div>
-  <div class="footer">
+  <div class="footer_container">
+    <div class="footer">
     <div class="footer_left">
       <ul>
-        <li>@ 2015 GitHub, Inc.</li>
-        <li><a href="https://www.github.com">Terms</a></li>
-        <li><a href="https://www.github.com">Privacy</a></li>
-        <li><a href="https://www.github.com">Security</a></li>
-        <li><a href="https://www.github.com">Contact</a></li>
-        <li><a href="https://www.github.com">Help</a></li>
+        <li class="copy_right">@ 2015 GitHub, Inc.</li>
+        <li><a class="footer_link" href="https://www.github.com">Terms</a></li>
+        <li><a class="footer_link" href="https://www.github.com">Privacy</a></li>
+        <li><a class="footer_link" href="https://www.github.com">Security</a></li>
+        <li><a class="footer_link" href="https://www.github.com">Contact</a></li>
+        <li><a class="footer_link" href="https://www.github.com">Help</a></li>
       </ul>
+      <span class="footer_logo"><i class="fa fa-github fa-2x"></i></span>
     </div>
     <div class="footer_right">
       <ul>
-        <li><a href="https://www.github.com">Status</a></li>
-        <li><a href="https://www.github.com">API</a></li>
-        <li><a href="https://www.github.com">Training</a></li>
-        <li><a href="https://www.github.com">Shop</a></li>
-        <li><a href="https://www.github.com">Blog</a></li>
-        <li><a href="https://www.github.com">About</a></li>
-        <li><a href="https://www.github.com">Pricing</a></li>
+        <li><a class="footer_link" href="https://www.github.com">Status</a></li>
+        <li><a class="footer_link" href="https://www.github.com">API</a></li>
+        <li><a class="footer_link" href="https://www.github.com">Training</a></li>
+        <li><a class="footer_link" href="https://www.github.com">Shop</a></li>
+        <li><a class="footer_link" href="https://www.github.com">Blog</a></li>
+        <li><a class="footer_link" href="https://www.github.com">About</a></li>
+        <li><a class="footer_link" href="https://www.github.com">Pricing</a></li>
       </ul>
     </div>
+
+  </div>
   </div>
   <script src="bower_components/jquery/dist/jquery.js"></script>
+  <script src="bower_components/moment/moment.js"></script>
   <script src="main.js"></script>
 </body>
 
